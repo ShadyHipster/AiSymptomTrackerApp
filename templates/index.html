@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero-section text-center py-5">
+    <div class="container">
+        <h1 class="display-4 mb-4">AI-Powered Symptom Tracker</h1>
+        <p class="lead mb-4">Get instant medical insights powered by AI. Track your symptoms, receive intelligent diagnoses, and get personalized healthcare recommendations.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg">
+                    <div class="card-body p-4">
+                        <h3 class="card-title text-primary mb-4">How It Works</h3>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="feature-box">
+                                    <i class="fas fa-edit fa-3x text-primary mb-3"></i>
+                                    <h5>1. Input Symptoms</h5>
+                                    <p>Describe your symptoms in natural language</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="feature-box">
+                                    <i class="fas fa-brain fa-3x text-success mb-3"></i>
+                                    <h5>2. AI Analysis</h5>
+                                    <p>Our AI analyzes symptoms against medical databases</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="feature-box">
+                                    <i class="fas fa-clipboard-list fa-3x text-warning mb-3"></i>
+                                    <h5>3. Get Recommendations</h5>
+                                    <p>Receive triage recommendations and next steps</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg me-3">Get Started</a>
+            <a href="{{ url_for('login') }}" class="btn btn-outline-primary btn-lg">Login</a>
+        </div>
+    </div>
+</div>
+
+<div class="features-section py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-user-md fa-2x text-primary mb-3"></i>
+                        <h5 class="card-title">Personalized Healthcare</h5>
+                        <p class="card-text">Track your medical history and get personalized recommendations based on your health profile.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-history fa-2x text-success mb-3"></i>
+                        <h5 class="card-title">Symptom History</h5>
+                        <p class="card-text">Keep track of all your symptoms and AI diagnoses for better healthcare decision making.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="disclaimer-section py-4 bg-warning">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <h5><i class="fas fa-exclamation-triangle"></i> Important Disclaimer</h5>
+                <p class="mb-0">This application is for educational and informational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
