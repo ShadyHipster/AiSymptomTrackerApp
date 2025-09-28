@@ -1,12 +1,11 @@
 
-# Symptom Triage Demo (Streamlit)
+# Symptom Checker AI
 
-A quick hackathon demo that turns a free-text symptom into a **triage recommendation** with a **severity color bar**.
+A quick hackathon demo app that turns a free-text symptom into a **triage recommendation** with a **severity color bar**.
 
 ## Features
 - Single demo user profile (pregnant 25 y/o with asthma).
 - Uses OpenAI **Responses API** with **Structured Outputs (JSON Schema)** for reliable UI rendering.
-- Falls back to a **mock rule engine** if `OPENAI_API_KEY` is not set.
 - Visual **green→red severity bar** with a marker positioned by the triage level.
 
 ## Setup
