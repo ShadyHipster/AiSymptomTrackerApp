@@ -32,5 +32,5 @@ streamlit run app.py
 Open the local URL in your browser. If no API key is set, the app will still run using a simple mock ruleset.
 
 ## Notes
-- This is a **demo**; not medical advice.
+- uses healthcare databases
 - For a real build, plug in a vetted medical content source and add stronger red-flag rules.
