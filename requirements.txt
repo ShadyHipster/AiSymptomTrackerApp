@@ -1,2 +1,2 @@
-Flask==2.3.3
-Werkzeug==2.3.7
+openai>=1.40.0
+streamlit>=1.37.0
